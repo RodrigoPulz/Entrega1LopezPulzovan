@@ -7,7 +7,7 @@ from Optica.templates import *
 # Create your views here.
 
 def inicio(request):
-    return render(request,"Optica/index.html")
+    return render(request,"Optica/base.html")
 
 def marcos(request):
     return render(request,"Optica/carga_marcos.html")

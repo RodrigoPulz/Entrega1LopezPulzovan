@@ -14,8 +14,11 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Optica</a>
+            <div class="container px-4">                
+                <a class="navbar-brand" href="{% url 'inicio' %}">|  Optica </a>
+                <a class="navbar-brand" href="{% url 'cristales' %}">|  Cristales </a>
+                <a class="navbar-brand" href="{% url 'liquidos' %}">|  Liquidos </a>
+                <a class="navbar-brand" href="{% url 'marcos' %}">|  Marcos |</a>
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
@@ -29,7 +32,11 @@
         <!-- Header-->
         <header class="bg-primary bg-gradient text-white">
             <div class="container px-4 text-center">
+                {% block TituloBanner %}
+
                 <h1 class="fw-bolder">Bienvenidos a la pagina de Optica</h1>
+
+                {% endblock %}
                 <!--<p class="lead">A functional Bootstrap 5 boilerplate for one page scrolling websites</p> -->
                 <!--<a class="btn btn-lg btn-light" href="#about">Start scrolling!</a>-->
             </div>
@@ -39,12 +46,9 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>MARCOS</h2>
-                        <p class="lead">Para agregar marcos haga click en:</p>
-                        <ul>
-                            <li><a href="#">LINK DE MARCOS</a></li>
-                            
-                        </ul>
+                        {% block Sector1 %}
+
+                        {% endblock %}
                     </div>
                 </div>
             </div>
@@ -54,12 +58,9 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>CRISTALES</h2>
-                        <p class="lead">Para agregar cristales haga click en:</p>
-                        <ul>
-                            <li><a href="#">LINK DE CRISTALES</a></li>
-                            
-                        </ul>
+                        {% block Sector2 %}
+
+                        {% endblock %}
                     </div>
                 </div>
             </div>
@@ -69,12 +70,9 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>LIQUIDOS</h2>
-                        <p class="lead">Para agregar liquidos haga click en:</p>
-                        <ul>
-                            <li><a href="#">LINK DE LIQUIDOS</a></li>
-                            
-                        </ul>
+                        {% block Sector3 %}
+
+                        {% endblock %}
                     </div>
                 </div>
             </div>
