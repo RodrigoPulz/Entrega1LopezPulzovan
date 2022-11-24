@@ -8,7 +8,15 @@
 
 
 {% block Sector1 %}
-<p>In eu semper est. Sed faucibus luctus lectus, in pharetra massa ullamcorper eget. Etiam dapibus, lectus ac aliquet mattis, dolor magna lacinia odio, non accumsan libero quam id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique tincidunt purus, eget dictum mi convallis quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus non turpis massa.</p>
+<h1>CARGADOR DE LIQUIDOS</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+
+        {{ formulario.as_p }}
+
+        <input type="submit" value="Cargar Liquido">
+    </form>
+
 {% endblock %}
 
 

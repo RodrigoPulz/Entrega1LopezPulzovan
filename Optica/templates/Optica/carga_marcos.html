@@ -8,7 +8,14 @@
 
 
 {% block Sector1 %}
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac varius libero, sit amet tincidunt metus. Ut quis tellus vitae magna vestibulum euismod. Aliquam vitae lobortis arcu, sed semper arcu. Nulla scelerisque, libero non tempus placerat, mi ex sodales tellus, a molestie ex leo quis urna. Nullam cursus arcu in ornare cursus. Cras nec pulvinar nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus mattis, nunc non ullamcorper hendrerit, purus turpis interdum nunc, vitae suscipit justo ipsum vitae quam. Mauris aliquet leo eu metus lobortis posuere. Mauris ullamcorper neque mauris, nec aliquet ipsum sodales et. Sed ipsum risus, sagittis id placerat pellentesque, convallis sit amet urna. Nulla quis urna tincidunt, gravida ipsum ultricies, blandit orci.</p>
+<h1>CARGADOR DE MARCOS</h1>
+<form action="" method="post">
+    {% csrf_token %}
+
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Cargar Marco">
+</form>
 {% endblock %}
 
 

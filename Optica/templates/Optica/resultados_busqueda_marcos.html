@@ -2,20 +2,21 @@
 
 {% block TituloBanner %}
 
-<h1 class="fw-bolder">Bienvenidos a la carga de cristales</h1>
+<h1 class="fw-bolder">Bienvenidos a la busqueda de marcos</h1>
 
 {% endblock %}
 
 
 {% block Sector1 %}
-<h1>CARGADOR DE CRISTALES</h1>
-<form action="" method="post">
-    {% csrf_token %}
+<h1>RESULTADOS:</h1>
+    <ul>
+        {% for marco in marcos %}
+            <li> {{marco.nombre}} - {{marco.marca}} - ${{marco.precio}} </li>
+        {% endfor %}
 
-    {{ formulario.as_p }}
+    </ul>
 
-    <input type="submit" value="Cargar Cristal">
-</form>
+
 {% endblock %}
 
 

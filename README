@@ -1,0 +1,23 @@
+# INFORMACION SOBRE EL PROYECTO:
+
+# El proyecto de "Optica" fué pensado como el esqueleto base de un gestor de inventario para una Optica,
+# Con el fin de llevar un registro de marcos, liquidos y cristales por el momento.
+
+# Se eligió una plantilla base desde bootstrap con la que se definió la pagina "base.html" y de la cual heredan los estilos todas las otras.
+
+# Por el momento la unica App de la pagina es "Optica" y consiste de la carga y busqueda de lementos en la BDD
+
+# Se ingresa a la aplicacion por medio de la ruta generada por manage.py + /Optica/inicio (http://127.0.0.1:8000/Optica/inicio/)
+
+# Una vez en la pagina de inicio en la barra superior encontramos todas las secciones de la pagina 
+
+# - Optica (Inicio)
+# - Cristales
+# - Busqueda de Cristales
+# - Liquidos
+# - Busqueda de Liquidos
+# - Marcos
+# - Busqueda de Marcos
+
+# Dentro de cada seccion base se pueden cargar los items en la base de datos y en la seccion de busqueda filtrar los deseados por nombre.
+
